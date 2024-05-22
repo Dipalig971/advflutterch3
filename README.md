@@ -1,16 +1,39 @@
-# advflutterch3
+<h1 align="center"> Advance Flutter Chapter 3 💻</h1>
 
-A new Flutter project.
+<h2 align="center">3.1 connectivity_plus package</h2>
 
-## Getting Started
+Step 1.Add the connectivity_plus dependency to your pubspec.yaml file:
 
-This project is a starting point for a Flutter application.
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+ connectivity_plus: ^6.0.3
+```
+Then run flutter pub get to install the dependency.
 
-A few resources to get you started if this is your first Flutter project:
+### usage
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Step 2.Import the connectivity_plus package in your Dart file:
+```
+import 'package:connectivity_plus/connectivity_plus.dart';
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Step 3.Here’s a simple example of how to use connectivity_plus to monitor network connectivity in a Flutter app.
+
+```dart
+import 'package:connectivity_plus/connectivity_plus.dart';
+
+final List<ConnectivityResult> connectivityResult = await Connectivity().checkConnectivity();
+
+// This condition is for demo purposes only to explain every connection type.
+if (connectivityResult.contains(ConnectivityResult.mobile)) {
+  print("Device is connected to WiFi.");
+} else if (connectivityResult.contains(ConnectivityResult.wifi)) {
+  print("Device is connected to cellular data.");
+} else {
+  print("No active network connection.");
+}
+```
+
+
