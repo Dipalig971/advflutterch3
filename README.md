@@ -35,5 +35,11 @@ if (connectivityResult.contains(ConnectivityResult.mobile)) {
   print("No active network connection.");
 }
 ```
+<h2 align="center">3.1 connectivity_plus package</h2>
+<div align="center">
+     <img src="https://github.com/Dipalig971/advflutterch3/assets/143181151/98951421-18cc-48c8-8538-3ae484835fc3" width=22% height=33%>
+  <img src="https://github.com/Dipalig971/advflutterch3/assets/143181151/05508523-8ed2-4c5d-a101-7c63bd351110" width=22% height=33%>
+  <video src = 'https://github.com/Dipalig971/advflutterch3/assets/143181151/d5b9c8a2-d915-421b-8f89-78e3b78da18f'>
+ </div>
 
 
