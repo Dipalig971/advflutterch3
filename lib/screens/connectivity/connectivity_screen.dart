@@ -87,7 +87,7 @@ class ConnectivityScreen extends StatelessWidget {
             }
           },
           stream: Connectivity().onConnectivityChanged,
-        ));
+        ),);
   }
 }
 
